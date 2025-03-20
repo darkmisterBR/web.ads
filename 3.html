@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html leng ="en">
+    <head></head>
+    <style>
+        .container{
+            position: relative;;
+            margin:50px;
+            border: 1px solid black;
+        }
+        .box{
+        display: inline-block;
+        width:100px;
+        height: 100px;
+        border:1px solid black;
+        padding: 10px;
+        margin: 20px;
+        outline: 1px dotted red;
+        outline-offset: 5px;}
+
+        #item1{
+            position:static;
+            /*position: relative;*/
+            top: 100px;
+            left: 200px;
+            border: 10px solid rgba(150,220,240,20);
+            background-color: magenta;
+            background-image: url("logo.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            border-radius:50%;
+            line-height: 100px;
+            color:yellow;
+            font-size:20pt;
+            font-size: normal;
+        }
+        #item2{
+            position:absolute;
+            top:0px;
+            top:0px;
+        }
+        #item3{
+            position: fixed;/*relação ao vieu port*/
+            /*bottom: 0px;*/
+            right:50px;
+            top:50%;
+            transform:translate(-50%,-50%);
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div id="item1" class="box">item1</div>
+            <div id="item2" class="box">item2</div>
+            <div id="item3" class="box">item3</div>
+            <div id="item4" class="box">item4</div>
+        </div>
+    </body>
+</html>
